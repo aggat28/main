@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        margin: auto;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+       }
+        div{
+            display: inline-block;
+            height: 40vh;
+            min-height: 35vh;
+            width: 500px;
+            max-width: 550px;
+            vertical-align: top;
+            border: 2px solid red;
+            margin-left: 0;
+            float: left;
+            overflow: hidden;
+            text-align: left;
+        }
+        div:nth-of-type(1){
+            border-bottom: 0;
+            border-right: 0;
+        }
+        div:nth-of-type(2){
+            border-bottom: 0;
+        }
+        div:nth-of-type(3){
+            border-right: 0;
+        }
+        span{
+            margin:15px;
+            border: 1px solid red;
+            border-radius: 50%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+       li{
+           list-style-type: none;
+           padding-left: 28px;
+           list-style-position: outside;
+       }
+       li::before{
+           content: '-';
+           padding-right: 0.5rem;
+           color: red;
+           font-weight: 800;
+       }
+        li:nth-of-type(even)
+        {color: red;}
+        
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h2><span>1</span>Идея сайта. Создание psd-макет</h2>
+            <ul>
+                <li>Создание идеи</li>
+                <li>Разработка структуры проекта</li>
+                <li>Проработка макета проекта</li>
+                <li>Создание psd-макета</li>
+            </ul>
+    </div>
+    <div> 
+        <h2><span>2</span>Верстка сайта по макету</h2>
+        <ul>
+            <li>Выбор схемы верстки.</li>
+            <li>Использование модульной сетки и фреймворков, которые ее предоставляют.</li>
+            <li>Адаптивная верстка сайта под различные разрешения экранов</li>
+            <li>Использование принципов Mobile First, Progressive Enhacement или Graceful Degradation</li>
+        </ul>
+    </div>
+    <div>
+        <h2><span>3</span>Выбор CMS для сайта</h2>
+        <ul>
+            <li>Оценка необходимости переноса html-макета на одну из CMS.</li>
+            <li>Преобразование html-файлов в php, разделение файлов для повторного использования</li>
+            <li>Добавление функционала в шаблон</li>
+        </ul>
+    </div>
+    <div>
+        <h2><span>4</span>Размещение сайта на хостинге</h2>
+        <ul>
+            <li>Выбор площадки для размещения сайта.</li>
+            <li>Выбор подходящего хостинг-плана</li>
+            <li>Выбор и регистрация доменного имени</li>
+            <li>Перенос файлов с локального компьютера на хостинг</li>
+        </ul>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    *{
+        margin: auto;
+    }
+    .conteiner{
+        padding: 50px;
+        width: 400px;
+        height: 400px;
+        background-color: rgb(250, 77, 9);
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 300px;
+        background-color: rgb(143, 143, 143);
+        align-items: center;
+        box-shadow: 0 0 10px 5px rgb(78, 77, 78);
+        
+    }
+    input{
+        margin: 10px;
+        height: 30px;
+        width: 200px;
+    }
+    h2{
+        margin: 30px;
+        margin-bottom: 40px;
+    }
+    #login{
+        background-color: darkgreen;
+        color: white;
+        font-size: 20px;
+        border: 0;
+        border-radius: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: tomato;
+        font-size: 17px;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    p{
+        text-align: center;
+        padding-top: 20px;
+        font-size: 20px;
+        color: white;
+    }
+    .soc{
+        display: flex;
+        cursor: pointer;
+    }
+    button{
+        border: none;
+        font: inherit;
+        background-color: transparent;
+        text-transform: capitalize;
+        width: 160px;
+        height: 40px;
+        margin-top: 30px;
+       
+    }
+    #fb{
+        text-decoration: none;
+        background-color: rgb(59, 26, 245);
+        border: none;
+        color: wheat;
+        text-transform: capitalize;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    
+    #tw{
+        text-decoration: none;
+        background-color: rgb(11, 168, 230);
+        border: none;
+        color: wheat;
+        text-transform: capitalize;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    
+</style>
+
+</head>
+<body>
+    <div class="conteiner">
+        <form>
+        <div class="content">
+                <h2>Member login</h2>
+                <input type="text" name="username" placeholder="usermame" value="">
+                <input type="password" name="password" placeholder="password" value="">
+                <input type="submit" value="login" id="login">
+                <a href="#"><div class="forgot">forgot password?</div></a>
+            </div>
+            <p>... or log in with</p>
+            <div class="soc">
+                <button id="fb" > <i class="fa fa-facebook"></i>facebook</button>
+                
+                <button id="tw" > <i class="fa fa-twitter"></i>twitter</button>
+                
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

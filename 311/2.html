@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .wrapper{
+        box-sizing: border-box;
+        width: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "a1 t1a . "
+                             ". t1j j1"
+                             "a2 t2a ."
+                             ". t2j j2"
+                             "a3 t3a ."
+                             ". t3j j3";
+          }
+.jack1{
+    grid-area: j1;
+    width: 50px;
+}
+.jack2{
+    grid-area: j2;
+    width: 50px;
+}
+.jack3{
+    grid-area: j3;
+    width: 50px;
+}
+.ann1{
+    grid-area: a1;
+    width: 50px;
+    
+}
+.ann2{
+    grid-area: a2;
+    width: 50px;}
+    .ann3{
+    grid-area: a3;
+        width: 50px;}
+.text1a{
+    grid-area: t1a;
+    height: 100px;
+    width: 600px;
+    background-color: darkgreen;
+}
+.text2a{
+    grid-area: t2a;
+    height: 100px;
+    width: 600px;
+    background-color: darkgreen;
+}
+.text3a{
+    grid-area: t3a;
+    height: 100px;
+    width: 600px;
+    background-color: darkgreen;
+}
+
+.text1j{
+    grid-area: t1j;
+    height: 100px;
+    width: 600px;
+    background-color: darkred;}
+.text2j{
+    grid-area: t2j;
+    height: 100px;
+    width: 600px;
+    background-color: darkred;}
+.text3j{
+    grid-area: t3j;
+    height: 100px;
+    width: 600px;
+    background-color: darkred;}
+    
+
+    
+
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        
+           <div class="ann1">Ann</div>
+           <div class="text1a">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+        
+        
+            
+            <div class="text1j">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+            <div class="Jack1">Jack</div>
+
+            <div class="ann2">Ann</div>
+           <div class="text2a">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+
+           
+           <div class="text2j">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+           <div class="Jack2">Jack</div>
+
+           <div class="ann3">Ann</div>
+           <div class="text3a">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+        
+           
+           <div class="text3j">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+           <div class="Jack3">Jack</div>
+        
+    </div>
+</body>
+</html>

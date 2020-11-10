@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+.conteiner{
+    width: 100vw;
+    height: 100vh;
+    
+}
+.row{
+    display: flex;
+    
+    
+}
+.box1{
+    width:20%;
+    background-color: black;
+    height:300px;
+
+}
+.box2{
+    width:35%;
+    background-color: black;
+    height:300px;
+}
+.box3{
+    width:45%;
+    background-color: black;
+    height:300px;
+}
+.box4{
+    
+}
+.box5{
+    
+}
+.box6{
+    
+}
+px
